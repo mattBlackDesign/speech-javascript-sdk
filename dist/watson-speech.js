@@ -4446,7 +4446,7 @@ var reDUnderscoreWords = /D_[^\s]+/g; // replace D_(anything)
 FormatStream.prototype.clean = function clean(text) {
   // clean out "junk"
   text = text
-    .replace(reHesitation, this.options.hesitation ? this.options.hesitation.trim() + ' ' : this.options.hesitation)
+    .replace(reHesitation, this.options.hesitation ? this.options.hesitation.trim() + ' ' : ' ')
     .replace(reRepeatedCharacter, '')
     .replace(reDUnderscoreWords, '');
 
